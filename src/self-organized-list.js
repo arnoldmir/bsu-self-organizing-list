@@ -41,8 +41,8 @@ for(var i=0; i<this.length; i++)
   if(node.data==data)
   {
     return node;
-  }
-}
+  };
+};
     }
 
     toArray() {
