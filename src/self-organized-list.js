@@ -35,7 +35,7 @@ else return null;
     }
 
     findNode(data) {
-      
+      return sol.filter(element => element === data)[0]
     }
 
     toArray() {
