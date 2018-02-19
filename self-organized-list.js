@@ -25,9 +25,9 @@ return this.length;
 if (index==0) return this.head.data;
 if (index<this.length && index>0)
 {
-  var node=new Node();
+  let node=new Node();
   node=this.head.next;
-  for (var i=1; i <index; i++)
+  for (let i=1; i <index; i++)
   node=node.next;
   return node.data;
 }
@@ -35,19 +35,12 @@ else return null;
     }
 
     findNode(data) {
-for(var i=0; i<this.length; i++)
-{
-  var node=this.atNode(i);
-  if(node.data==data)
-  {
-    return node;
-  }
-}
+
     }
 
     toArray() {
-var arr =[];
-for(var i=0; i<this.length;i++)
+let arr =[];
+for(let i=0; i<this.length;i++)
 arr.push(this.at(i));
 return arr;
     }
