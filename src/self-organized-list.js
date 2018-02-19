@@ -14,10 +14,7 @@ class SelfOrganizedList {
     }
 
     insert(data) {
-//this.length++;
-let node = head;
-while (node.next) node = node.next;
-node.next = data
+this.length++;
     }
 
     size() {
