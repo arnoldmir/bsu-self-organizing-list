@@ -39,7 +39,7 @@ else return null;
       let node = this.head;
       while (node) {
       index++;
-      if (node.data === data) return index;
+      if (node.data == data) return index;
       node = node.next;
       }
       return 'ma';
