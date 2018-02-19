@@ -35,7 +35,14 @@ else return null;
     }
 
     findNode(data) {
-
+      let index = -1;
+      let node = this.head;
+      while (node) {
+      index++;
+      if (node.data === data) return index;
+      node = node.next;
+      }
+      return 'ma';
     }
 
     toArray() {
