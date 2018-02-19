@@ -35,7 +35,14 @@ else return null;
     }
 
     findNode(data) {
-
+for(var i=0; i<this.length; i++)
+{
+  var node=this.atNode(i);
+  if(node.data==data)
+  {
+    return node;
+  }
+}
     }
 
     toArray() {
