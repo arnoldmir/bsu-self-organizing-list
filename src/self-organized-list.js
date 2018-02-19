@@ -22,7 +22,16 @@ return this.length;
     }
 
     at(index) {
-
+if (index==0) return this.head.data;
+if (index<this.length && index>0)
+{
+  var node=new Node();
+  node=this.head.next;
+  for (var i=1; i <index; i++)
+  node=node.next;
+  return node.data;
+}
+else return null;
     }
 
     findNode(data) {
@@ -30,7 +39,10 @@ return this.length;
     }
 
     toArray() {
-
+var arr =[];
+for(var i=0; i<this.length;i++)
+arr.push(this.at(i));
+return arr;
     }
 
     removeAt(index) {
