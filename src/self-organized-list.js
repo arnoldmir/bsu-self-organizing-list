@@ -10,14 +10,15 @@ class SelfOrganizedList {
     constructor() {
         this.head = null;
         this.tail = null;
+        this.length = 0;
     }
 
     insert(data) {
-
+this.length++;
     }
 
     size() {
-
+return this.length;
     }
 
     at(index) {
@@ -33,7 +34,7 @@ class SelfOrganizedList {
     }
 
     removeAt(index) {
-
+this.length--;
     }
 
     moveToFront(node) {
